@@ -12,7 +12,7 @@ Simple wrapper for Localytics
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    startLocalytics(@"91466843fc3f11366e3f8fb-494eaede-7374-11e2-2f0c-008e703cf207");
+    startLocalytics(@"key");
     
     return YES;
 }
