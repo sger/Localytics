@@ -15,4 +15,26 @@ void startLocalytics(NSString *key)
 #endif
 }
 
+void closeLocalytics()
+{
+#if LOCALYTICS_ENABLED
+    [[LocalyticsSession sharedLocalyticsSession] close];
+#endif
+}
+
+void uploadLocalytics()
+{
+#if LOCALYTICS_ENABLED
+    [[LocalyticsSession sharedLocalyticsSession] upload];
+#endif
+}
+
+void resumeLocalytics()
+{
+#if LOCALYTICS_ENABLED
+    [[LocalyticsSession sharedLocalyticsSession] resume];
+#endif
+}
+
+
 

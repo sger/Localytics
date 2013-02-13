@@ -15,4 +15,8 @@
 #endif
 
 void startLocalytics(NSString *key);
+void closeLocalytics();
+void uploadLocalytics();
+void resumeLocalytics();
+
 
