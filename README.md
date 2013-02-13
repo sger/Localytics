@@ -1,6 +1,6 @@
 # Localytics
 
-Simple wrapper for Localytics
+Simple wrapper for Localytics iOS Library
 
 ## Using the Localytics
 
