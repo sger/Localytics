@@ -19,19 +19,19 @@ Simple wrapper for Localytics
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    [[LocalyticsSession sharedLocalyticsSession] close];
-    [[LocalyticsSession sharedLocalyticsSession] upload];
+    closeLocalytics();
+    uploadLocalytics();
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    [[LocalyticsSession sharedLocalyticsSession] resume];
-    [[LocalyticsSession sharedLocalyticsSession] upload];
+    resumeLocalytics();
+    uploadLocalytics()
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    [[LocalyticsSession sharedLocalyticsSession] close];
+    closeLocalytics();
 }
 
 ```
